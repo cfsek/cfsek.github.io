@@ -21,6 +21,15 @@ const matchDayLinks = {
     'gacf' : document.getElementById('gacf-link')
 }
 
+const favicon = document.getElementById('fav');
+
+const matchDayFavicons = {
+    'cfsek' : 'cfsek.png',
+    'cacf' : 'cacf.png',
+    'fsacf' : 'fsacf.png',
+    'gacf' : 'gacf.png'
+}
+
 for (const mdLink in matchDayLinks) {
     matchDayLinks[mdLink].addEventListener('mouseenter', e => {
         for (const minilogo in matchDayMinilogos) {
@@ -30,5 +39,6 @@ for (const mdLink in matchDayLinks) {
         matchDayMinilogos[mdLink].classList.remove('hidden');
 
         header.style.backgroundColor = secondaryColors[mdLink];
+        favicon.href = matchDayFavicons[mdLink];
     });
 };
