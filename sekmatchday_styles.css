@@ -1,0 +1,154 @@
+*, *::before, *::after {
+    box-sizing: border-box;
+}
+
+* {
+    margin: 0;
+}
+
+body {
+    margin: 0;
+    background-image: url("SEKMatchDay.org\%20BG.png");
+    background-position: bottom;
+    background-size: cover;
+    background-repeat: no-repeat;
+    font-family: sans-serif;
+    height: 100vh;
+    /* overflow-y: hidden; */
+}
+
+header {
+    background-color: #74c69c;
+    color: #f5f5f5;
+    padding: 1rem;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    transition: background-color 0.3s ease-in-out;
+}
+
+h1 {
+    margin: 0;
+    display: flex;
+    justify-content: space-between;
+}
+
+#main {
+    height: 100%;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+}
+
+#content {
+    height: 100%;
+    grid-column: 2;
+    display: grid;
+    grid-gap: 2rem;
+    grid-template-rows: auto auto;
+    justify-items: center;
+    align-items: center;
+    padding: 75px 10% 0 10%;
+}
+
+h2 {
+    text-align: center;
+    margin: 0;
+    font-size: 3rem;
+    align-self: end;
+}
+
+.match_day_text {
+    font-family: century-gothic, sans-serif;
+    color: #582700;
+}
+
+.minilogo {
+    vertical-align: middle;
+}
+
+#buttons_div {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: auto auto;
+    grid-gap: 2rem;
+    place-content: center;
+    place-items: center;
+    max-width: 80%;
+}
+
+#buttons_div a {
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#buttons_div a img {
+    filter: drop-shadow(15px 15px #26262699);
+    transition: all 0.3s ease-in-out;
+    max-width: 100%;
+    max-height: 100%;
+}
+
+#buttons_div a img:hover {
+    transform: translate(8px, 8px);
+    filter: drop-shadow(7px 7px #26262699);
+}
+
+#buttons_div a img:active {
+    transform: translate(15px, 15px);
+    filter: drop-shadow(0px 0px #00000000);
+}
+
+.hidden {
+    display: none;
+}
+
+@media screen and (max-width: 1200px) {
+    body {
+        background-image: url("SEKMatchDay.org\%20BG\%20portrait.png");
+    }
+
+    header {
+        padding: 1rem 0rem;
+    }
+
+    h1 {
+        flex-direction: column;
+        align-content: center;
+        text-align: center;
+    }
+
+    #sekmatchday_date {
+        font-size: 0.7em;
+    }
+
+    #main {
+        display: block;
+    }
+
+    #content {
+        grid-template-rows: auto 1fr;
+        grid-gap: 2rem;
+        padding-top: 150px;
+        align-items: start;
+        /* background: #f5f5f566; */
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        align-self: end;
+    }
+    
+    #buttons_div {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto auto;
+        grid-gap: 1.5rem;
+        justify-items: center;
+        align-content: start;
+    }
+
+    :is(#buttons_div) a, a img {
+        max-width: 35vw;
+        max-height: 35vw;
+    }
+}
