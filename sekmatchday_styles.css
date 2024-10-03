@@ -13,8 +13,8 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
-    height: 100vh;
-    /* overflow-y: hidden; */
+    height: 100dvh;
+    overflow-y: hidden;
 }
 
 header {
@@ -75,6 +75,7 @@ h2 {
     place-content: center;
     place-items: center;
     max-width: 80%;
+    padding-bottom: 1rem;
 }
 
 #buttons_div a {
