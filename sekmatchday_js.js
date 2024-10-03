@@ -27,7 +27,8 @@ const matchDayFavicons = {
     'cfsek' : 'cfsek.png',
     'cacf' : 'cacf.png',
     'fsacf' : 'fsacf.png',
-    'gacf' : 'gacf.png'
+    'gacf' : 'gacf.png',
+    'multi' : 'multi.png'
 }
 
 for (const mdLink in matchDayLinks) {
@@ -40,5 +41,9 @@ for (const mdLink in matchDayLinks) {
 
         header.style.backgroundColor = secondaryColors[mdLink];
         favicon.href = matchDayFavicons[mdLink];
+    });
+
+    matchDayLinks[mdLink].addEventListener('mouseleave', e => {
+        favicon.href = matchDayFavicons['multi'];
     });
 };
