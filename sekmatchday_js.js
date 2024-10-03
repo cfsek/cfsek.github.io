@@ -22,6 +22,7 @@ const matchDayLinks = {
 }
 
 const favicon = document.getElementById('fav');
+favicon.href = 'multi.png'; // initialize Favicon on load
 
 const matchDayFavicons = {
     'cfsek' : 'cfsek.png',
