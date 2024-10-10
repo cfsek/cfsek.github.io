@@ -13,7 +13,7 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     font-family: sans-serif;
-    height: 100dvh;
+    height: 100vh;
     overflow-y: hidden;
 }
 
@@ -37,18 +37,17 @@ h1 {
 #main {
     height: 100%;
     display: grid;
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: 1fr;
 }
 
 #content {
     height: 100%;
-    grid-column: 2;
     display: grid;
     grid-gap: 2rem;
     grid-template-rows: auto auto;
     justify-items: center;
     align-items: center;
-    padding: 75px 10% 10%;
+    padding: 75px 10% 0 10%;
 }
 
 h2 {
@@ -106,7 +105,7 @@ h2 {
 
 @media screen and (max-width: 1200px) {
     body {
-        background-image: url("SEKMatchDay.org\%20BG\%20portrait.png");
+        background-position: left center;
     }
 
     header {
@@ -151,5 +150,19 @@ h2 {
     :is(#buttons_div) a, a img {
         max-width: 35vw;
         max-height: 35vw;
+    }
+
+    #buttons_div a img {
+        filter: drop-shadow(8px 8px #26262699);
+    }
+
+    #buttons_div a img:hover {
+        transform: translate(4px, 4px);
+        filter: drop-shadow(4px 4px #26262699);
+    }
+    
+    #buttons_div a img:active {
+        transform: translate(8px, 8px);
+        filter: drop-shadow(0px 0px #00000000);
     }
 }
