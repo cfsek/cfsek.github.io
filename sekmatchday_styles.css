@@ -73,7 +73,7 @@ h2 {
     grid-gap: 2rem;
     place-content: center;
     place-items: center;
-    max-width: 80%;
+    max-width: 100%;
     padding-bottom: 1rem;
 }
 
