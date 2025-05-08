@@ -117,3 +117,15 @@ h1 {
 #logos img:hover {
     transform: scale(1.2);
 }
+
+@media (prefers-reduced-motion) {
+
+    #spinners,
+    .wheel,
+    .lwindow,
+    #logos img,
+    .floating .wheel {
+        transition: all 0s;
+        animation: none;
+    }
+}
