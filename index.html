@@ -1,55 +1,78 @@
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Heads up!</title>
-    <link rel="stylesheet" href="sekmatchday_styles_25-5-8.css">
+    <link rel="stylesheet" href="sekmatchday_styles.css">
     <link rel="icon" href="multi.png" id="fav">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+    <link
+        href="https://fonts.googleapis.com/css2?family=Fraunces:ital,opsz,wght@0,9..144,100..900;1,9..144,100..900&display=swap"
         rel="stylesheet">
+    <title>Choose your Match Week host</title>
 </head>
 
 <body>
+    <header>
+        <h1><span>Choose your</span>
+            <span id="logo-all" class="minilogo">
+                <a href="https://sekmatchweek.org"><img src="all_hosts_minilogo.png" alt="General Match Week Logo"></a>
+            </span>
+            <span id="logo-cfsek" class="hidden minilogo">
+                <a href="https://sekgives.org"><img src="cfsek_match_week_minilogo.png" alt="Visit SEKGives.org"></a>
+            </span>
+            <span id="logo-cacf" class="hidden minilogo">
+                <a href="https://columbusareacf.org"><img src="cacf_match_week_minilogo.png"
+                        alt="Visit ColumbusAreaCF.org"></a>
+            </span>
+            <span id="logo-fsacf" class="hidden minilogo">
+                <a href="https://fortscottgives.org"><img src="fsacf_match_week_minilogo.png"
+                        alt="Visit FortScottGives.org"></a>
+            </span>
+            <span id="logo-gacf" class="hidden minilogo">
+                <a href="https://girardareafoundation.org"><img src="gacf_match_week_minilogo.png"
+                        alt="Visit GirardAreaFoundation.org"></a>
+            </span>
+            <span>host</span>
+        </h1>
+    </header>
     <div id="main">
-        <h1>Match Day is</h1>
-        <div id="spinners" class="static">
-            <div class="lwindow">
-                <span class="wheel">C</span>
+        <div id="content">
+            <div id="buttons_div">
+                <a href="https://sekgives.org" id="cfsek-link"><img src="SEKMatchWeek.org%20Button%20-%20CFSEK.png"></a>
+                <a href="https://columbusareacf.org" id="cacf-link"><img
+                        src="SEKMatchWeek.org%20Button%20-%20CACF.png"></a>
+                <a href="https://fortscottgives.org" id="fsacf-link"><img
+                        src="SEKMatchWeek.org%20Button%20-%20FSACF.png"></a>
+                <a href="https://girardareafoundation.org" id="gacf-link"><img
+                        src="SEKMatchWeek.org%20Button%20-%20GACF.png"></a>
             </div>
-            <div class="lwindow">
-                <span class="wheel">H</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">A</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">N</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">G</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">I</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">N</span>
-            </div>
-            <div class="lwindow">
-                <span class="wheel">G</span>
+            <div id="details_div">
+                <span id="full-logo-all">
+                    <a href="https://sekmatchweek.org"><img src="Match Week Logo.png" alt="General Match Week Logo"></a>
+                </span>
+                <span id="full-logo-cfsek" class="hidden">
+                    <a href="https://sekgives.org"><img src="CFSEK Match Week Logo.png" alt="Visit SEKGives.org"></a>
+                </span>
+                <span id="full-logo-cacf" class="hidden">
+                    <a href="https://columbusareacf.org"><img src="CACF Match Week Logo.png"
+                            alt="Visit ColumbusAreaCF.org"></a>
+                </span>
+                <span id="full-logo-fsacf" class="hidden">
+                    <a href="https://fortscottgives.org"><img src="FSACF Match Week Logo.png"
+                            alt="Visit FortScottGives.org"></a>
+                </span>
+                <span id="full-logo-gacf" class="hidden">
+                    <a href="https://girardareafoundation.org"><img src="GACF Match Week Logo.png"
+                            alt="Visit GirardAreaFoundation.org"></a>
+                </span>
+                <p class="bold">November 10 - 14, 2025</p>
             </div>
         </div>
-        <div id="tuner">Details coming <a href="https://SoutheastKansas.org/seminar">August 14</a>!</div>
     </div>
-    <div id="logos">
-        <a href="https://SoutheastKansas.org"><img id="cfsek" src="./cfsek_logo.png"></a>
-        <a href="https://ColumbusAreaCF.org"><img id="cacf" src="./cacf_logo.png"></a>
-        <a href="https://fsacf.com"><img id="fsacf" src="./fsacf_logo.png"></a>
-        <a href="https://GirardAreaFoundation.org"><img id="gacf" src="./gacf_logo.png"></a>
-    </div>
-    <script src="sekmatchday_js_25-5-8.js"></script>
+    <script src="sekmatchday_js.js"></script>
 </body>
 
 </html>
